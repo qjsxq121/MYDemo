@@ -10,14 +10,22 @@
 
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    myView.backgroundColor = [UIColor redColor];
+    
+    [self.view addSubview:myView];
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
